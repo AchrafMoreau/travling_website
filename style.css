@@ -99,7 +99,7 @@ nav{
 .content .welcom{
     color: rgb(255, 255, 255, .8);
     padding-top: 20px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     line-height: 1.2rem;
 
     font-family: 'poppins' ;
@@ -110,7 +110,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 70px;
+    padding-bottom: 100px;
 }
 .reviwe_profile{
     border-radius: 50%;
@@ -136,3 +136,61 @@ nav{
     font-size: .8rem;
     padding: 3px;
 }
+
+/* ----------------------- SEARCH STYLE ----------------*/ 
+.search *{
+    /*border: 1px solid red;*/
+}
+.search{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    width: 80%;
+    font-size: 1.3rem;
+    margin: auto;
+    background-color: #F2FAF9;
+    padding-inline: 40px;
+    padding-block: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px ;
+    transform: translateY(-50px);
+    font-family: 'poppins';
+    color: #565656;
+    gap: 8px;
+}
+input{
+    margin-left: 20px;
+    background-color: transparent;
+    border: none;
+    color: #565656;
+    border-style: hidden;
+    width: 100%;
+    font-size: 1rem;
+}
+.inputs{
+    background-color: #eaeaea;
+    border-radius: 5px;
+    padding-inline: 10px;
+    padding-block: 15px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    
+}
+.inputs:nth-child(1){
+    grid-column: span 2;
+}
+input:focus{
+    outline: none;
+}
+
+.btn_search{
+    grid-column: span 2;
+    font-size: 1.2rem;
+    background-color: #233D2C;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+}
+
+
+

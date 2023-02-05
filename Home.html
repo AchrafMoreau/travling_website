@@ -58,9 +58,29 @@
         <div class="myimage">
         </div>
     </section>
+    <section class="search">
+        <div class="inputs">
+            <i class="fa-sharp fa-solid fa-map"></i>
+            <input type="text" placeholder="I want to go">
+        </div>
+        <div class="inputs">
+            <i class="fa-solid fa-calendar-days"></i>
+            <input type="text" onfocus="(this.type='date')" placeholder="Check in">
+        </div>
+        <div class="inputs">
+            <i class="fa-solid fa-calendar-days"></i>
+            <input data-check-in type="text" placeholder="Check out">
+        </div>
+        <div class="inputs">
+            <i class="fa-solid fa-user-group"></i>
+            <input data-check-out type="text" placeholder="Travellers">
+        </div>
+        <button class="btn_search">Find avilable cobins</button>
+    </section>
 
 
 
     <script src="https://kit.fontawesome.com/5fff77269d.js" crossorigin="anonymous"></script>
+    <script src="./manipulation.js"></script>
 </body>
 </html>
