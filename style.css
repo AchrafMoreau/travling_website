@@ -15,6 +15,9 @@
     --color-secondary:#1A3724;
     --colose-to-white:#F2FAF9;
 
+    --ff-h1: 'Source Serif Pro';
+    --ff-p: 'poppins';
+
 }
 
 
@@ -24,6 +27,9 @@ ul li{
 a{
     text-decoration: none;
     color: inherit;
+}
+section{
+    padding-block: 50px;
 }
 
 /*-------------- NAVBAR STYLE ---------------*/
@@ -69,6 +75,8 @@ nav{
 .hero{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    margin: 0;
+    padding: 0;
 }
 .myimage{
     background: linear-gradient(to right, var(--gray-color), rgb(0, 0, 0, .1)), url(./assets/home_img.jpg) no-repeat center center/cover;
@@ -138,9 +146,7 @@ nav{
 }
 
 /* ----------------------- SEARCH STYLE ----------------*/ 
-.search *{
-    /*border: 1px solid red;*/
-}
+
 .search{
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -192,5 +198,160 @@ input:focus{
     border: none;
 }
 
+/* ----------------------- CABINS STYLE ----------------*/ 
 
 
+.cabin{
+    width: 80%;
+    margin: auto;
+}
+.cabin >h1{
+    color: #22223C;
+    font-family: 'Source Serif Pro', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 50px;
+    position: relative;
+}
+.cabin >h1::after{
+    content: '';
+    width: 150px;
+    height: 2px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    background-color: #F5B963;
+}
+.discription{
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--ff-h1);
+    font-size: 1.1rem;
+    color: #47475F;
+    padding-bottom: 50px;
+}
+.discription a{
+    text-decoration: underline;
+    font-family: var(--ff-p);
+}
+.our_grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.cabin_cards{
+    position: relative;
+    border-radius: 5px;
+    background-color: #2B3030;
+    color: #fff;
+}
+.cabin_cards::before{
+    content: "\2665";
+    font-size: 2rem;
+    text-align: center;
+    padding-inline:10px ;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #929292;
+}
+.contents{
+    padding: 15px;
+}
+.location{
+    font-family: var(--ff-p);
+    color: #D7FFF1;
+    font-size: .7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-bottom: 5px;
+}
+.cabin_cards img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;  
+}
+
+.header_cabin{
+    font-size: .87rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.price{
+    font-family: var(--ff-p);
+    font-size: 20px;
+}
+.price>span{
+    font-weight: 500;
+}
+
+.disc{
+    color: #E0F2EB;
+    text-transform: lowercase;
+    font-family: var(--ff-p);
+    font-size:  13px;
+    line-height: 1.5rem;
+    padding-bottom: 20px;
+}
+
+.footer_cabin{
+    display: flex;
+    align-items: center;
+    font-family: var(--ff-p);
+    font-size: .8rem;
+}
+.cabin_star{
+    font-size: .7rem;
+    padding-right: 20px;
+}
+
+.active{
+    color: #D7FFF1;
+}
+
+
+
+/* ----------------------- INSIPERATION STYLE ----------------*/ 
+
+#inspiration{
+    background-color: #F2FAF9;
+}
+.inspiration{
+    width: 80%;
+    margin: auto;
+}
+.inspiration >h1{
+    color: #22223C;
+    font-family: 'Source Serif Pro', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 50px;
+    position: relative;
+}
+.inspiration >h1::after{
+    content: '';
+    width: 150px;
+    height: 2px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    background-color: #F5B963;
+}
+.inspiration_cards{
+    background-color: #596363;
+    position: relative;
+    border-radius: 5px;
+    color: #fff;
+}
+.inspiration_cards img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;  
+}
